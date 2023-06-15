@@ -22,17 +22,6 @@ login           =   docker login
 create volume   =   docker volume create <name volume>
 mount volume    =   docker run -it --mount <source>,<destination> -d <container name>
 
-##### docker file #####
-
-FROM ubuntu
-RUN apt-get update -y
-RUN apt-get install apache2 -y
-ADD . /var/www/html
-ENTRYPOINT apachectl -D FOREGROUND
-ENV name Devop sharfuddin
-
-docker file build command = docker build . -t <docker file name/any new name>
-
 
 
 
