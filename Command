@@ -41,5 +41,15 @@ docker run -it --name <continer2> -d <image name>            conatiner2 is creat
 docker run -it --name container1 --link container2 -d <image name>
 
 
+docker service create --name <name of service> --replicas <no of replica> -p 80:80 <image name>
+create service for nginx cluster with 3 replica
+docker swarm init --adverties -addr=<ip address of leader>
+after that get link to connect node machine
+
+docker node ls <all node list>
+docker swarm leave --force  <cancel swarm service>
+
+
+
 
 
