@@ -12,7 +12,7 @@ Command 1 :
 Command 2:
   chmod +x ~/.docker/cli-plugins/docker-compose
 
-Command 4:
+Command 3:
   apt-get install docker compose -y
   docker-compose --version
 
@@ -27,14 +27,12 @@ Command 4:
  Command 2 : 
     docker-compose up -d
 
-    after that mysql and wordpress container is  up and running 
-
-
-
-
+    after that mysql and wordpress container is  up and running
+    Now i can access wordpress through public ip with port 
+    http://3.219.35.111:8080/  
 
     
-  Command 5 : 
+  Command 3 : 
     docker-compose down   <delete the all compose container>
     
     
