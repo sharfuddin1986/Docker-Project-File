@@ -41,6 +41,9 @@ docker file build command = docker build . -t <docker file name/any new name>
  docker exec -it container2 /bin/bash
  cat /etc/hosts
  After that i can see here two  ip address one is container2 is connected with container1
+ apt-get install ping 
+ apt-get install inputils-ping 
+ ping container1                           its pinging reply from continer1
 
 
 
