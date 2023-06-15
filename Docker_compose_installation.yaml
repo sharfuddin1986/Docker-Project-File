@@ -14,3 +14,17 @@ Command 2:
 
 Command 4:
   docker-compose --version
+
+
+ #### Step to Run Docker compose file ########### 
+
+ Command 1 :
+    mkdir docker
+    cd docker 
+    nano docker-compose.yml
+    paste the script
+ Command 2 : 
+    docker-compose up -d
+    
+    
+ 
