@@ -1,4 +1,4 @@
-###### Docker all command#####
+###### Docker All Command #####
 
 
 install docker  =   docker.io       
@@ -7,6 +7,32 @@ push image      =   docker push username/newimagename
 version check   =   docker --version ,docker -v, docker version
 Run container   =   docker run -dit --name <container name> -p 82:80 <imsge name>
 inside container=   docker exec -it <continer id> /bin/bash
+kill container  =   docker kill <continer id>
+stop container  =   docker stop <container id>
+start container =   docker start <continer id>
+container list  =   docker ps -a
+image list      =   docker images
+remove container=   docker rm <container id>
+forceily remove =   docker rm -f
+allcontainer remove docker rm -f $<sudo docker ps -a -q>
+remmove images  =   docker rmi <image name>
+continer to image   docker commit <contained id> <dockerhub username/image name any>
+login           =   docker login
+create volume   =   docker volume create <name volume>
+mount volume    =   docker run -it --mount <source>,<destination> -d <container name>
+
+##### docker file #####
+
+FROM ubuntu
+RUN apt-get update -y
+RUN apt-get install apache2 -y
+ADD . /var/www/html
+ENTRYPOINT apachectl -D FOREGROUND
+ENV name Devop sharfuddin
+
+docker file build command = docker build . -t <docker file name/any new name>
+
+
 
 
 
