@@ -5,16 +5,12 @@ https://docs.docker.com/compose/install/
 
 # Download the files for docker-compose installation
 Command 1 : 
-  sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  mkdir -p ~/.docker/cli-plugins/
+  curl -SL https://github.com/docker/compose/releases/download/v2.3.3/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
   
 #Give execute permission to the docker-compose
 Command 2:
-  sudo chmod +x /usr/local/bin/docker-compose
+  chmod +x ~/.docker/cli-plugins/docker-compose
 
-#Create a soft link for docker-compose
-Command 3:
-  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-
-#Verify the docker-compose installation
 Command 4:
   docker-compose --version
