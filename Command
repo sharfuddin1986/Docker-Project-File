@@ -6,6 +6,7 @@ pull image      =   docker pull <image name>
 push image      =   docker push username/newimagename
 version check   =   docker --version ,docker -v, docker version
 Run container   =   docker run -dit --name <container name> -p 82:80 <imsge name>
-inside container
+inside container=   docker exec -it <continer id> /bin/bash
+
 
 
