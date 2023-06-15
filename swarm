@@ -1,7 +1,42 @@
 ##### Docker Swarm #############
 
 
-No need to install any package because  like docker compose its built in  with docker.io
+ No need to install any package because  like docker compose its built in  with docker.io
 
-command1 
+Command 1:
+   
+  docker swarm init --advertise-addr=3.219.35.111<ip address of leader means ec2 master machine public ip>
+
+  after that i get link to connect any node just copy and save for feature use to connect instance 
+
+  docker swarm join --token SWMTKN-1-3ynb83d3mish38i0pcgtauhihri7cl49naofqmidbtrd1trewj-2kbcerfq5um5au2qyu5476q11 3.219.35.111:2377
+
+ create new node Ec2 instance and install docker 
+  paste the join link after that sucessfully join node
+
+
+Command 2:
+  docker node ls 
+
+  i can see the all machine ip address list and leader machine show as a * symbol
+
+Command 3:
+  docker swarm leave --force             for cancel swarm service 
+
+
+####   service-container on the cluster any deployed using services on docker swarm.A services is a long runing docker container
+that can be deployed to any node worker  ####
+
+Command 1:
+  docker service create --name <name of service> --replicas <no of replicas> <image name>
+  docker service create --name nginx --replicas 3 -p 80:80 nginx   <example>
+
+  after that three container is created with nginx.if i delete any container automatically create new one because replicas 3
+
+
+
+
+
+
+
 
