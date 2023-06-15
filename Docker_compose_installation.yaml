@@ -13,6 +13,7 @@ Command 2:
   chmod +x ~/.docker/cli-plugins/docker-compose
 
 Command 4:
+  apt-get install docker compose -y
   docker-compose --version
 
 
@@ -25,6 +26,16 @@ Command 4:
     paste the script
  Command 2 : 
     docker-compose up -d
+
+    after that mysql and wordpress container is  up and running 
+
+
+
+
+
+    
+  Command 5 : 
+    docker-compose down   <delete the all compose container>
     
     
  
