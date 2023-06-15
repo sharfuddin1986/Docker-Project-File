@@ -16,6 +16,7 @@ remove container=   docker rm <container id>
 forceily remove =   docker rm -f
 allcontainer remove docker rm -f $<sudo docker ps -a -q>
 remmove images  =   docker rmi <image name>
+detail of contner   docker inspect <container id>
 continer to image   docker commit <contained id> <dockerhub username/image name any>
 login           =   docker login
 create volume   =   docker volume create <name volume>
@@ -34,11 +35,13 @@ docker file build command = docker build . -t <docker file name/any new name>
 
 ###### link container command ####
 
-docker run -it --link<continer1> -d <image name>
-docker run -it --name <continer1> -d <image name>            conatiner1 is created
-docker run -it --name <continer2> -d <image name>            conatiner2 is created
+ docker run -it --name <container1> -d ubuntu                       conatiner1 is created
 
-docker run -it --name container1 --link container2 -d <image name>
+ docker run -it --name <container2> --link <container1> -d <image name>
+ docker exec -it container2 /bin/bash
+ cat /etc/hosts
+ After that i can see here two  ip address one is container2 is connected with container1
+
 
 
 docker service create --name <name of service> --replicas <no of replica> -p 80:80 <image name>
