@@ -16,6 +16,12 @@ ENTRYPOINT apachectl -D FOREGROUND
 
 docker images
 sharfuddin available 
+docker run -dit --name sanaf -p 80:80 sharfuddin
+docker ps -a
+sanaf contianer available 
+apache website is up and runing 
+
+
   
 
 
