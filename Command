@@ -32,7 +32,9 @@ ENV name Devop sharfuddin
 
 docker file build command = docker build . -t <docker file name/any new name>
 
+###### link container command ####
 
+docker run -it --name <container1> --link  <continer2> -d ubuntu 
 
 
 
