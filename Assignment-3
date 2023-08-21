@@ -1,1 +1,11 @@
 
+############################################      Assignment-1    ####################################
+
+                                1. Use the saved image in the previous assignment
+                                2. Upload this image on Docker Hub
+                                3. On a separate machine pull this Docker Hub image and launch it on port 80
+                                4. Start the Apache2 service
+                                5. Verify if you are able to see the Apache2 service
+
+######################    Follow the below command to execute the Assignment      ############################################
+
