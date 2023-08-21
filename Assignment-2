@@ -1,0 +1,10 @@
+############################################      Assignment-2    ####################################
+
+                                1. Save the image created in assignment 1 as a Docker image
+                                2. Launch container from this new image and map the port to 81
+                                3. Go inside the container and start the Apache2 service
+                                4. Check if you are able to access it on the browser
+                            
+
+######################    Follow the below command to execute the Assignment      ############################################
+
