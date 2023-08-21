@@ -1,4 +1,17 @@
-1. Pull Ubuntu container
-2. Run this container and map port 80 on the local
-3. Install Apache2 on this container
-4. Check if you are able to access the Apache page on your browse
+############################################      Assignment-1    ####################################
+
+                                1. Pull Ubuntu container    
+                                2. Run this container and map port 80 on the local
+                                3. Install Apache2 on this container
+                                4. Check if you are able to access the Apache page on your browse
+                            
+
+######################    Follow the below command to execute the Assignment      ############################################
+
+
+Step-1
+      Take remote ec2 instance with ubuntu os
+      apt-get install docker.io
+      docker pull ubuntu:latest
+      docker run -dit --name assignment1 -p 80:80 ubuntu:latest
+
