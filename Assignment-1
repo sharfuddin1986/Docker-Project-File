@@ -1,0 +1,4 @@
+1. Pull Ubuntu container
+2. Run this container and map port 80 on the local
+3. Install Apache2 on this container
+4. Check if you are able to access the Apache page on your browse
