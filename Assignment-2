@@ -17,3 +17,6 @@ Step2
      docker run -dit --name c2 -p 81:80 c1image 
      docker exec -it c2 /bin/bash
      service apache2 start 
+
+
+######################    Now Apache2 default web page is working fine  ############################################
