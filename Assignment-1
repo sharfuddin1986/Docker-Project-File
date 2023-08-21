@@ -15,3 +15,11 @@ Step-1
       docker pull ubuntu:latest
       docker run -dit --name assignment1 -p 80:80 ubuntu:latest
 
+Step-2
+      docker exec -it assignment1 /bin/bash
+      apt-get update -y
+      apt install apache2 -y
+
+
+######################    Now Apache2 default web page is working fine  ############################################
+
