@@ -8,3 +8,12 @@
 
 ######################    Follow the below command to execute the Assignment      ############################################
 
+Step1
+     I have assignmet1 image with apache2 service then need to commit the image first
+     docker commit assignment1 c1image 
+
+
+Step2
+     docker run -dit --name c2 -p 81:80 c1image 
+     docker exec -it c2 /bin/bash
+     service apache2 start 
