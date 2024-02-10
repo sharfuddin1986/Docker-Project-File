@@ -13,7 +13,7 @@ Command 2:
   chmod +x ~/.docker/cli-plugins/docker-compose
 
 Command 3:
-  apt-get install docker compose -y
+  apt-get install docker-compose -y
   docker-compose --version
 
 
