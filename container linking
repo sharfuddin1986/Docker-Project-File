@@ -13,6 +13,6 @@
  
  apt-get install ping 
  
- apt-get install inputils-ping 
+ apt-get install inetutils-ping
  
  ping container1                           its pinging reply from continer1                       
