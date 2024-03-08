@@ -11,3 +11,20 @@
 
 
 
+Step1
+     I have assignmet2 image with apache2 service then need to push dockerhub account
+     rename the image name because first dockerhub account name then image
+     docker tag c1image sharfuddin1986/c1image
+     docker login   
+     docker push sharfuddin1986/c1image
+
+      
+
+
+Step2
+     docker run -dit --name c2 -p 81:80 c1image 
+     docker exec -it c2 /bin/bash
+     service apache2 start 
+
+
+######################    Now Apache2 default web page is working fine  ############################################
