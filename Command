@@ -14,7 +14,7 @@ container list  =   docker ps -a
 image list      =   docker images
 remove container=   docker rm <container id>
 forceily remove =   docker rm -f
-allcontainer remove docker rm -f $<sudo docker ps -a -q>
+allcontainer remove docker rm -f $(sudo docker ps -a -q)
 remmove images  =   docker rmi <image name>
 detail of contner   docker inspect <container id>
 continer to image   docker commit <contained id> <dockerhub username/image name any>
