@@ -1,0 +1,30 @@
+
+############################################      Assignment-5   ####################################
+
+                                1. Create a dockerfile with the following specs:   
+                                2. Create a sample HTML file
+                                3. Use the Dockerfile from the previous task 
+                                4. Replace this sample HTML file inside the docker container with the default page 
+                            
+
+######################    Follow the below command to execute the Assignment      ############################################
+
+
+Step-1
+      cd /home/ubuntu
+      nano index.html     #    html code file just paste here 
+      nano dockerfile      #   write the dockerfile add one more for index.html file
+
+      FROM ubuntu 
+      RUN apt-get update -t
+      RUN apt-get install apache2 -y
+      ADD . /var/www/html/ 
+      ENTRYPOINT apachectl -D FOREGROUND
+
+Step-2
+      run the command below 
+      docker build . -t lastest_image(any name can put)
+      docker rum -dit --name abc -p 80:80 latest_image 
+      
+
+######################    Now Apache2 default web page is working fine  ############################################
