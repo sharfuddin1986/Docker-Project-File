@@ -1,1 +1,27 @@
 
+############################################      Assignment-4   ####################################
+
+                                1. Create a dockerfile with the following specs:   
+                                2. Ubuntu container
+                                3. Apache2 installed
+                                4. Apache2 should automatically run once the container starts
+                            
+
+######################    Follow the below command to execute the Assignment      ############################################
+
+
+Step-1
+      nano dockerfile      #   write the dockerfile
+
+      FROM ubuntu 
+      RUN apt-get update -t
+      RUN apt-get install apache2 -y
+      ENTRYPOINT apachectl -D FOREGROUND
+
+Step-2
+      run the command below 
+      docker build . -t lastest_image(any name can put)
+      docker rum -dit --name abc -p 80:80 latest_image 
+      
+
+######################    Now Apache2 default web page is working fine  ############################################
