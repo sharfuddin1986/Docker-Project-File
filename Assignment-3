@@ -18,11 +18,9 @@ Step1
      docker login   
      docker push sharfuddin1986/c1image
 
-      
-
-
 Step2
-     docker run -dit --name c2 -p 81:80 c1image 
+     docker pull sharfuddin1986/c1image
+     docker run -dit --name c2 -p 81:80 sharfuddin1986/c1image 
      docker exec -it c2 /bin/bash
      service apache2 start 
 
