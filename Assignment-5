@@ -12,7 +12,7 @@
 
 Step-1
       cd /home/ubuntu
-      nano index.html     #    html code file just paste here 
+      nano index.html      #   html code file just paste here 
       nano dockerfile      #   write the dockerfile add one more for index.html file
 
       FROM ubuntu 
