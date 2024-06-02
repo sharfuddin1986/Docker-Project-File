@@ -34,6 +34,14 @@ after that get link to connect node machine
 docker node ls <all node list>
 docker swarm leave --force  <cancel swarm service>
 
+docker service ls                          show all runing service 
+docker service  ps nginx(service name)     show the all service container
+docker node ls                             show the node list
+
+docker service update --replicas 5 nginx   update replicas 3 to 5
+docker service rm nginx                    Delete service 
+docker service rollback nginx(service name)  previous version roll back service 
+
 
 
 
