@@ -21,6 +21,8 @@ continer to image   docker commit <contained id> <dockerhub username/image name 
 login           =   docker login
 create volume   =   docker volume create <name volume>
 mount volume    =   docker run -it --mount <source>,<destination> -d <container name>
+cid inform      =   docker inspect continer id 
+container detail=   docker container logs container id 
 
 
 
